@@ -144,6 +144,118 @@ main {
     background: #fdf2f2;
 }
 
+/* Nested todo styles */
+.todo-main, .subtask-main {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.todo-item:hover .todo-actions,
+.subtask-item:hover .todo-actions {
+    opacity: 1;
+}
+
+.add-subtask-btn {
+    padding: 6px 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.add-subtask-btn:hover {
+    background: #2980b9;
+}
+
+.subtask-input {
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    align-items: center;
+}
+
+.subtask-input input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.subtask-input button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.subtask-input button:first-of-type {
+    background: #27ae60;
+    color: white;
+}
+
+.subtask-input button:first-of-type:hover {
+    background: #229954;
+}
+
+.cancel-btn {
+    background: #95a5a6 !important;
+    color: white !important;
+}
+
+.cancel-btn:hover {
+    background: #7f8c8d !important;
+}
+
+.subtasks {
+    list-style: none;
+    padding-left: 40px;
+    border-left: 2px solid #ecf0f1;
+    margin-left: 20px;
+}
+
+.subtask-item {
+    border-bottom: 1px solid #f1f3f4;
+    background: #fafbfc;
+}
+
+.subtask-item:last-child {
+    border-bottom: none;
+}
+
+.subtask-item.completed {
+    opacity: 0.6;
+}
+
+.subtask-main {
+    padding: 12px 16px;
+}
+
+.subtask-item .todo-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.subtask-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+
 /* Stats */
 .stats {
     text-align: center;

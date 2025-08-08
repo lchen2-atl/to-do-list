@@ -1,53 +1,74 @@
-# Todo App
+# 📝 Nested Todo List
 
-A minimalistic todo application built with vanilla HTML, CSS, and JavaScript.
+A modern, interactive todo application that supports nested subtasks for better task organization.
 
 ## Features
 
-- ✅ Add new todos
-- ✅ Mark todos as complete/incomplete
-- ✅ Delete todos
-- ✅ Persistent storage (localStorage)
-- ✅ Clean, minimal design
-- ✅ Responsive layout
-- ✅ Keyboard shortcuts
+### ✨ Core Functionality
+- **Add Todo Items**: Create main todo items with a simple input interface
+- **Nested Subtasks**: Add unlimited levels of subtasks to any todo item
+- **Mark Complete**: Check off completed tasks and subtasks
+- **Delete Items**: Remove todo items and their subtasks
+- **Persistent Storage**: All data is saved to browser localStorage
 
-## Usage
+### 🎯 Nested Todo Features
+- **Hierarchical Structure**: Organize tasks with parent-child relationships
+- **Visual Nesting**: Clear visual indication of task hierarchy with indentation
+- **Cascade Completion**: When a parent task is marked complete, all subtasks are automatically completed
+- **Independent Subtasks**: Subtasks can be managed independently of their parent
+- **Multi-level Nesting**: Support for deeply nested task structures
 
-1. Open `index.html` in your web browser
-2. Type a todo item in the input field
-3. Press Enter or click "Add" to add the todo
-4. Click the checkbox to mark todos as complete
-5. Click "Delete" to remove todos
-6. Your todos are automatically saved and will persist between sessions
+### 📊 Statistics
+- Real-time count of total tasks (including subtasks)
+- Track completed vs. remaining tasks
+- Visual progress indication
 
-## Keyboard Shortcuts
+## How to Use
 
-- **Enter**: Add a new todo (when input is focused)
-- **Any letter**: Focus the input field (when not already focused)
+1. **Add a Main Todo**: Type in the input field and click "Add" or press Enter
+2. **Add Subtasks**: Click "+ Subtask" on any todo item to create nested tasks
+3. **Complete Tasks**: Check the checkbox to mark items as complete
+4. **Delete Tasks**: Use the delete button to remove tasks and all their subtasks
+5. **Organize**: Create multiple levels of nesting to organize complex projects
+
+## Example Structure
+
+```
+📋 Plan vacation trip
+  ✅ Research destinations
+  ❌ Book flights
+  ❌ Find accommodation
+    ❌ Check hotel reviews
+    ❌ Compare prices
+
+📋 Complete project presentation
+  ✅ Create slides
+  ❌ Practice presentation
+```
 
 ## Technical Details
 
-- Pure vanilla JavaScript (no frameworks)
-- CSS Grid and Flexbox for layout
-- localStorage for data persistence
-- Responsive design for mobile and desktop
-- Accessible HTML structure
+- **Enhanced JavaScript**: Built upon the original todo app with nested functionality
+- **Responsive Design**: Works on desktop and mobile devices
+- **Local Storage**: Data persists between browser sessions
+- **Clean CSS**: Modern styling with nested visual hierarchy
 
-## Browser Support
+## Browser Compatibility
 
 Works in all modern browsers that support:
 - ES6 Classes
-- localStorage
-- CSS Flexbox
-- CSS Grid
+- LocalStorage API
+- CSS Grid/Flexbox
 
 ## File Structure
 
 ```
-├── index.html      # Main HTML structure
-├── styles.css      # Minimal CSS styling
-├── script.js       # Todo functionality
-└── README.md       # This file
+├── index.html      # Main HTML structure with nested support
+├── styles.css      # Enhanced CSS with nested todo styling
+├── script.js       # Enhanced JavaScript with nested functionality
+└── README.md       # This documentation
 ```
 
+## Getting Started
+
+Simply open `index.html` in your web browser to start organizing tasks with nested subtasks!
