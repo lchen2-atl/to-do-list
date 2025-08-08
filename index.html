@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Nested Todo List</h1>
+            <p>Organize your tasks with nested subtasks</p>
+        </header>
+        
+        <div class="todo-input-section">
+            <div class="input-group">
+                <input type="text" id="todoInput" placeholder="Add a new todo item..." />
+                <button id="addTodoBtn">Add Todo</button>
+            </div>
+        </div>
+        
+        <div class="todo-container">
+            <ul id="todoList" class="todo-list">
+                <!-- Todo items will be dynamically added here -->
+            </ul>
+        </div>
+        
+        <div class="stats">
+            <span id="totalTodos">0</span> total tasks | 
+            <span id="completedTodos">0</span> completed
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
